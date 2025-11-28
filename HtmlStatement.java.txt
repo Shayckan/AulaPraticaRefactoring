@@ -14,7 +14,7 @@ public class HtmlStatement extends Statement {
 
     @Override
     protected String footerString(Customer aCustomer) {
-        return "<P>You owe <EM>" + 
+        return "<P>You owe <EM>" +
                 String.valueOf(aCustomer.getTotalCharge()) +
                 "</EM><P>\n" +
                 "On this rental you earned <EM>" +

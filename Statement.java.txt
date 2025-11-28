@@ -19,4 +19,5 @@ public abstract class Statement {
 
     protected abstract String headerString(Customer aCustomer);
     protected abstract String rentalString(Rental aRental);
-    protect
+    protected abstract String footerString(Customer aCustomer);
+}
