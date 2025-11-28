@@ -15,7 +15,6 @@ class Rental {
         return _movie;
     }
 
-    // Refactoring 3: Move Method + Rename Method
     public double getCharge() {
         double thisAmount = 0;
 
@@ -39,4 +38,10 @@ class Rental {
 
         return thisAmount;
     }
-}
+
+    // Refactoring 5: Extract and Move Method
+    public int getFrequentRenterPoints() {
+        if (_movie.getPriceCode() == Movie.NEW_RELEASE && _daysRented > 1) {
+            return 2; // bônus
+        } else {
+            return
